@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Components</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="less/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700' rel='stylesheet' type='text/css' />
+    <link href="https://cdn.materialdesignicons.com/1.7.12/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 top-spacing">
+            <h6>Modals</h6>
+
+        <button class="finish-btn" data-toggle="modal" data-target="#confModal"> Confirmation</button>
+        <div class="modal fade" id="confModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content success-modal">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="mdi mdi-close"></i></span></button>
+                    <h4 class="complete-title"><i class="mdi mdi-check-circle mdi-48px success-green"></i>Company Setup Complete</h4>
+                    <div class="modal-body text-center">
+                       <div style="width100%; height: 150px;"></div>
+                        <button class="finish-btn" data-dismiss="modal" aria-label="Close">Done</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+            <button class="finish-btn" data-toggle="modal" data-target="#progdModal">Progress Delete</button>
+            <div class="modal fade" id="progdModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content success-modal">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="mdi mdi-close"></i></span></button>
+                        <h4 class="complete-title"><i class="mdi mdi-close-circle mdi-48px warning-red"></i>Company Delete</h4>
+                        <div class="modal-body text-center">
+                            <div class="progress-m-content">
+                                <p>Would you like to delete this company?</p>
+                                <p>This will return you to the company overview screen.</p>
+                            </div>
+                           <button class="grey-btn btn-r-space">Cancel</button><button class="warning-btn" data-dismiss="modal" aria-label="Close">Done</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+
+            <button class="finish-btn" data-toggle="modal" data-target="#proguModal">Unfinished </button>
+            <div class="modal fade" id="proguModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content success-modal">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="mdi mdi-close"></i></span></button>
+                        <h4 class="complete-title"><i class="mdi mdi-alert-circle mdi-48px warning-orange"></i>Warning, Unfinished Progress</h4>
+                        <div class="modal-body text-center">
+                            <div class="progress-m-content">
+                                <p>You are navigating away from this screen.</p>
+                                <p>Save this company and move on?</p>
+                            </div>
+                            <button class="grey-btn btn-r-space">Cancel</button><button class="purple-btn" data-dismiss="modal" aria-label="Close">Save & Continue</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+            <button class="finish-btn" data-toggle="modal" data-target="#saveModal"> Save Company</button>
+            <div class="modal fade" id="saveModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content success-modal">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="mdi mdi-close"></i></span></button>
+                        <h4 class="complete-title"><i class="mdi mdi-check-circle mdi-48px success-green"></i>Save Company</h4>
+                        <div class="modal-body text-center">
+                            <div class="progress-m-content">
+                                <p>Would you like to save the company and finish it later?</p>
+                                <p>This will return you to the company manager overview.</p>
+                            </div>
+                            <button class="grey-btn btn-r-space">Cancel</button> <button class="finish-btn" data-dismiss="modal" aria-label="Close">Save & Exit</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+
+        </div>
+    </div>
+
+    <div class="row top-spacing">
+        <div class="col-md-12 ">
+                <h6>Toggle switches with and without icons</h6>
+            <div class="col-md-1">
+                <input type="checkbox" id="toggle" class="btn-switch"/>
+                <label for="toggle"></label>
+            </div>
+            <div class="col-md-1">
+                <input type="checkbox" id="toggle-wi" class="btn-switch-wi"/>
+                <label for="toggle-wi"></label>
+            </div>
+        </div>
+    </div>
+    <div class="row top-spacing">
+        <div class="col-md-12 ">
+            <div>
+                <label class="progress-label">Importing... <span class="percentage"></span></label>
+                <div class="progress-wrap progress" data-progress-percent="48">
+                    <div class="progress-bar progress"></div>
+                    </div>
+                <i class="mdi mdi-close-circle mdi-16px-progress"></i>
+            </div>
+        </div>
+    </div>
+
+</div> <!--end container fluid-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<script scr="theme.js"></script>
+<script>
+    // on page load...
+    moveProgressBar();
+    // on browser resize...
+    $(window).resize(function() {
+        moveProgressBar();
+    });
+
+    // SIGNATURE PROGRESS
+    function moveProgressBar() {
+        console.log("moveProgressBar");
+        var getPercent = ($('.progress-wrap').data('progress-percent') / 100);
+        var getProgressWrapWidth = $('.progress-wrap').width();
+        var progressTotal = getPercent * getProgressWrapWidth;
+        var animationLength = 2500;
+        var percentageVal = $('.progress-wrap').data('progress-percent');
+
+        $('.percentage').append(percentageVal + '%');
+        // on page load, animate percentage bar to data percentage length
+        // .stop() used to prevent animation queueing
+        $('.progress-bar').stop().animate({
+            left: progressTotal
+        }, animationLength);
+    }
+</script>
+</body>
+</html>

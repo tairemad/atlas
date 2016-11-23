@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atlas - Job Details</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="less/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700' rel='stylesheet' type='text/css' />
+    <link href="https://cdn.materialdesignicons.com/1.7.12/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav>
+            <div class="col-md-8 pull-left">
+                <img src="images/logo.png" class="logo">
+            </div>
+            <div class="col-md-1 text-right"><img src="images/notification.png" style="margin-top: 10px;"></div>
+            <div class="col-md-3 login-section">
+                <i class="mdi mdi-account-circle mdi-48px login-icon"></i> <p>sjobs@apple.com <i class="mdi mdi-chevron-down" style="vertical-align: sub;"></i></p>
+            </div>
+        </nav>
+    </div> <!--end row-->
+
+    <div class="row spacing">
+        <div class="hidden-xs col-sm-2 col-md-2 side-menu pull-left">
+            <ul>
+                <li><i class="mdi mdi-speedometer mdi-36px"></i> <span>Dashboard</span></li>
+                <li><i class="mdi mdi-apps mdi-36px"></i> <span>Campaigns</span></li>
+                <li><i class="mdi mdi-domain mdi-36px"></i> <span>Company</span></li>
+                <li><i class="mdi mdi-bell-outline mdi-36px"></i> <span>Alerts & Notifications</span></li>
+                <li><i class="mdi mdi-account-outline mdi-36px"></i> <span>Manage Users</span></li>
+                <li><i class="mdi mdi-settings mdi-36px"></i> <span>My Account Settings</span></li>
+                <li><i class="mdi mdi-file-document mdi-36px"></i> <span>Help & Feedback</span></li>
+                <li><i class="mdi mdi-power mdi-36px"></i> <span>Logout</span></li>
+            </ul>
+            <button class="side-menu-btn"><i class="mdi mdi-chevron-left"></i> </button>
+        </div>
+        <div class="col-xs-12 col-sm-10 col-md-10 pull-right" style="padding: 0;">
+            <div class="col-md-12 campaign-head">
+                <h3>Create Campaign <i class="mdi mdi-login-variant"></i> <i class="mdi mdi-delete"></i></h3>
+                <ul class="campaign-tabs">
+                    <li class="active-tab">1. Job Details</li>
+                    <li>2. Candidate Match</li>
+                    <li class="marketing-tab"> Marketing Plan</li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 top-spacing">
+                <label class="input-label">Upload Details (not required)</label>
+                <div class="upload-box">
+                    <p><i class="mdi mdi-download"></i> Drop document or <a href="#">click here</a> to import listing </p>
+                </div>
+                <div class="form-group">
+                    <label class="input-label">Job Title</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label class="input-label input-label-hide">Location</label>
+                    <input type="text" placeholder="Location">
+                </div>
+                <div class="form-group select-nolabel">
+                    <select class="select-menu">
+                        <option>Employment Type</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+                <div class="form-group select-nolabel">
+                    <select class="select-menu">
+                        <option>Education Level</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="input-label input-label-hide">Description</label>
+                   <textarea rows="10" placeholder="Description"></textarea>
+                </div>
+                <div class="form-group">
+                    <label class="input-label">Labels</label>
+                    <div class="skills-box">
+                        <span class="criteria">Apple, Inc. <span class="crit-close"><i class="mdi mdi-close"></i></span></span> <span class="criteria">High Priority <span class="crit-close"><i class="mdi mdi-close"></i></span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="input-label">Skills</label>
+                    <div class="skills-box">
+                        <span class="criteria">UX Design <span class="crit-close"><i class="mdi mdi-close"></i></span></span> <span class="criteria">Product Design <span class="crit-close"><i class="mdi mdi-close"></i></span></span>
+                    </div>
+                </div>
+                <p><a href="#">Advanced Settings</a> <i class="mdi mdi-menu-down adv-setting-caret"></i></p>
+                <hr>
+                <button class="purple-btn pull-right" onclick="javascript:location.href='campaign-setup-2.html'">Continue</button>
+            </div>
+
+
+        </div>
+
+</div> <!--end container fluid-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<script scr="theme.js"></script>
+</body>
+</html>

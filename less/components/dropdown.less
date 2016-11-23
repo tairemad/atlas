@@ -1,0 +1,95 @@
+// main: ../theme.less
+
+// recommended to use the select2 component to have consistency across screens and devices
+// https://select2.github.io/
+
+////////////////////////////////////////////////
+//      DROPDOWN SELECT MENU
+////////////////////////////////////////////////
+
+select {
+  background: linear-gradient(#FCFCFC 0%, #F4F4F4 100%);
+  box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.05), 0px 1px 2px 0px rgba(0,0,0,0.30), inset 0px 1px 0px 0px #FFFFFF;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  transition: box-shadow 200ms ease;
+  font-family: @font-sans-serif;
+  font-size: 14px;
+  color: #757575;
+  font-weight: @font-sans-serif-light;
+}
+
+select:focus {
+  box-shadow: 0px 0px 3px 0px #00AFF0, 0px 1px 2px 0px rgba(0,0,0,0.20), 0 0 0 1px #009ED8 inset;
+}
+
+select option {
+  font-family: @font-sans-serif;
+  font-weight: @font-sans-serif-regular;
+  font-size: 14px;
+  color: #212121;
+}
+
+select option:checked { // isn't working in webkit browsers
+  color: #757575;
+}
+.select:before{
+  content: "\F140";
+  font: normal normal normal 24px/1 "Material Design Icons";
+  text-decoration: inherit;
+  color: #757575;
+  position: relative;
+  left: 95%;
+  top: 57px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.select-nolabel:before{
+  content: "\F140";
+  font: normal normal normal 24px/1 "Material Design Icons";
+  text-decoration: inherit;
+  color: #757575;
+  position: relative;
+  left: 95%;
+  top: 35px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.select-m:before{
+  content: "\F140";
+  font: normal normal normal 24px/1 "Material Design Icons";
+  text-decoration: inherit;
+  color: #757575;
+  position: relative;
+  left: 91%;
+  top: 57px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+
+.select-m-nolabel:before{
+  content: "\F140";
+  font: normal normal normal 24px/1 "Material Design Icons";
+  text-decoration: inherit;
+  color: #757575;
+  position: relative;
+  left: 91%;
+  top: 35px;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atlas - Mobile</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="../less/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700' rel='stylesheet' type='text/css' />
+    <link href="https://cdn.materialdesignicons.com/1.7.12/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav class="nav-mobile">
+            <div class="col-xs-2">
+                <div class="m-menu-btn">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="col-xs-8 text-center"> <img src="../images/logo.png" class="logo-m"> </div>
+            <div class="col-xs-2">
+                <img src="../images/notification.png">
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="m-required text-center"><p>All Fields Are Required</p></div>
+    </div>
+    <div class="row" style="display: none;">
+    <div class="mobile-side-menu">
+        <ul>
+            <li><i class="mdi mdi-close pull-right"></i></li>
+            <li class="list-title account-name-li"><i class="mdi mdi-account-circle mdi-36px"></i> Steve Jobs</li>
+            <li><i class="mdi mdi-speedometer"></i> <span>Dashboard</span></li>
+            <li><i class="mdi mdi-apps"></i> <span>Campaigns</span></li>
+            <li><i class="mdi mdi-domain"></i> <span>Company</span></li>
+            <li><i class="mdi mdi-bell-outline"></i> <span>Alerts & Notifications</span></li>
+            <li><i class="mdi mdi-account-outline"></i> <span>Manage Users</span></li>
+            <li class="list-title">Account Information</li>
+            <li><i class="mdi mdi-settings"></i> <span>My Account Settings</span></li>
+            <li><i class="mdi mdi-file-document"></i> <span>Help & Feedback</span></li>
+            <li><i class="mdi mdi-power"></i> <span>Logout</span></li>
+        </ul>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h3 class="company-header">Create Company</h3>
+            <p class="m-steps">1. Tell us about your company</p>
+            <ul class="dot-style-p">
+                <li><a href="#" class="active-dot"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <hr class="m-top-section">
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 75px;">
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label class="input-label">First Name</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label class="input-label">Last Name</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label class="input-label input-label-hide">Company Name</label>
+                <input type="text" placeholder="Company Name">
+            </div>
+            <div class="form-group select-m">
+                <label class="input-label">Country</label>
+                <select class="select-menu">
+                    <option>United States</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+            <div class="form-group select-m">
+                <label class="input-label">Industry</label>
+                <select class="select-menu">
+                    <option>Technology</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+            <div class="form-group select-m">
+                <label class="input-label">Number of Employees</label>
+                <select class="select-menu">
+                    <option>10,000 +</option>
+                    <option></option>
+                    <option></option>
+                    <option></option>
+                </select>
+            </div>
+            <button class="p-btn-mobile" onclick="javascript:location.href='billing.html'">Next <i class="mdi mdi-chevron-right"></i></button>
+        </div>
+
+    </div>
+
+    <div class="row" style="display: none">
+        <div class="mobile-side-menu" id="alerts">
+            <ul>
+                <li><i class="mdi mdi-close"></i></li>
+                <li class="list-title">Alerts & Notifications</li>
+                <li><span class="notification-circle notification-orange">2</span> <span>Messages</span></li>
+                <li><span class="notification-circle">0</span> <span>Campaign Updates</span></li>
+                <li><i class="mdi mdi-settings"></i> <span>Settings</span></li>
+            </ul>
+        </div>
+    </div>
+
+
+</div> <!--end container fluid-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<script scr="/theme.js"></script>
+</body>
+</html>

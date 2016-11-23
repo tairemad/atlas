@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atlas - Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="less/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700' rel='stylesheet' type='text/css' />
+    <link href="https://cdn.materialdesignicons.com/1.7.12/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav>
+            <div class="col-md-9 pull-left">
+                <img src="images/logo.png" class="logo">
+            </div>
+            <div class="col-md-3 text-right">
+                <button class="purple-btn btn-small" data-toggle="modal" data-target="#loginModal">Log In</button> <a href="#" class="sign-up" data-toggle="modal" data-target="#signupModal">Sign Up</a>
+            </div>
+        </nav>
+    </div> <!--end row-->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content success-modal">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="mdi mdi-close"></i></span></button>
+
+                <div class="modal-body">
+                    <h4 class="complete-title spacing">Monster Employer Account Login  </h4>
+                    <div class="form-group">
+                        <label class="input-label">Username</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label input-label-hide">Password</label>
+                        <input type="text" placeholder="Password">
+                    </div>
+                    <div class="modal-login">
+                    <div class="component" tabindex=3 style="display: inline-block; width: 315px; margin: 0;">
+                        <input type="checkbox" id="tbox" name="check" checked />
+                        <label for="tbox"><span>Remember Me </span></label>
+                    </div>
+                    <button class="finish-btn pull-right">Done</button>
+                    </div>
+                    <hr class="hr-border">
+                    <div class="modal-btm">
+                        <a href="#" class="password">Forgot Password?</a>
+                        <p class="login-modal-txt pull-right">Don't have an account? <a href="#">Sign Up</a> </p>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content success-modal">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="mdi mdi-close"></i></span></button>
+
+                <div class="modal-body">
+                    <h4 class="complete-title spacing">Create a Monster Employer Account </h4>
+                    <div class="form-group">
+                        <label class="input-label">Email Address</label>
+                        <input type="text">
+                    </div>
+                    <button class="purple-btn" style="width: 100%; margin: 10px 0;">Send me an account activation link</button>
+
+
+                    <hr class="hr-border">
+                    <div class="modal-btm">
+                        <p class="login-modal-txt pull-right">Already have an account? <a href="#">Log In</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.modal -->
+
+
+    <!--<div class="modal fade" id="createaccModal" tabindex="-1" role="dialog" aria-labelledby="createaccModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content success-modal">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="mdi mdi-close"></i></span></button>
+
+                <div class="modal-body">
+                    <h4 class="complete-title spacing">Monster Employer New Account </h4>
+                    <div class="form-group">
+                        <label class="input-label">Email Address</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-group">
+                        <label class="input-label">Password</label>
+                        <input type="password">
+                        <label class="input-label" style="margin-top: 10px;">Strength: <span class="pass-error">Weak</span> <span class="min-label">Minimum of 6 characters</span></label>
+                    </div>
+
+
+                    <div class="modal-login">
+                        <div class="component" tabindex=3 style="display: inline-block; width: 315px; margin: 0;">
+                            <input type="checkbox" class="checkbox" id="tbox" name="check" checked />
+                            <label for="tbox"><span>Remember Me </span></label>
+                        </div>
+                        <button class="finish-btn pull-right">Create Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- /.modal -->
+
+<div class="row">
+    <div style="margin-top: 250px;">
+    <div class="col-md-6 col-md-offset-3">
+        <p class="acc-header">This account activation is no longer valid.</p>
+       <!-- <p class="acc-header">This invite is no longer valid.</p>-->
+        <p class="login-modal-txt">Don’t worry, we can send you another email to active your account.</p>
+        <!--<p class="login-modal-txt">Don’t worry, you can request a new invite from <span class="company">Apple, Inc</span>.</p>-->
+        <hr class="hr-border">
+        <div class="form-group">
+            <label class="input-label">Email Address</label>
+            <input type="text">
+        </div>
+        <button class="purple-btn" style="width: 100%; margin: 10px 0;">Send me an account activation link</button>
+        <!--<button class="purple-btn" style="width: 100%; margin: 10px 0;">Request a new invite</button>-->
+    </div>
+
+    </div>
+</div>
+
+
+</div> <!--end container fluid-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<script scr="theme.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atlas - Multi View</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link href="less/styles.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700' rel='stylesheet' type='text/css' />
+    <link href="https://cdn.materialdesignicons.com/1.7.12/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <nav>
+            <div class="col-md-8 pull-left">
+                <img src="images/logo.png" class="logo">
+            </div>
+            <div class="col-md-1 text-right"><img src="images/notification.png" style="margin-top: 10px;"></div>
+            <div class="col-md-3 login-section">
+                <i class="mdi mdi-account-circle mdi-48px login-icon"></i> <p>sjobs@apple.com <i class="mdi mdi-chevron-down" style="vertical-align: sub;"></i></p>
+            </div>
+        </nav>
+    </div> <!--end row-->
+
+    <div class="row spacing">
+        <div class="hidden-xs col-sm-2 col-md-2 side-menu pull-left">
+            <ul>
+                <li><i class="mdi mdi-speedometer mdi-36px"></i> <span>Dashboard</span></li>
+                <li><i class="mdi mdi-apps mdi-36px"></i> <span>Campaigns</span></li>
+                <li><i class="mdi mdi-domain mdi-36px"></i> <span>Company</span></li>
+                <li><i class="mdi mdi-bell-outline mdi-36px"></i> <span>Alerts & Notifications</span></li>
+            </ul>
+            <button class="side-menu-btn"><i class="mdi mdi-chevron-left"></i> </button>
+        </div>
+        <div class="col-xs-12 col-sm-10 col-md-10 pull-right" style="padding: 0;">
+            <div class="col-md-12 single-view-head">
+                <div class="col-md-8">
+                <input type="text" placeholder="&#xf002;   Search Campaigns" class="campaign-search">
+                </div>
+                <div class="col-md-4 text-right">
+                    <button class="purple-btn">Add Company <i class="mdi mdi-plus-circle-outline"></i></button>
+                </div>
+            </div>
+
+            <div class="col-md-12 criteria-row">
+                <div class="col-md-3">
+                    <h3 class="company-header">My Companies</h3>
+                </div>
+                <div class="col-md-7 text-right company-sort"  style="margin: 15px 0;">
+                    <div class="col-md-4"> <span>All campaigns <i class="mdi mdi-chevron-down"></i></span></div>
+                    <div class="col-md-4"><span>Sort by last updated <i class="mdi mdi-chevron-down"></i></span></div>
+                    <div class="col-md-4"><span>Clear Filters <i class="mdi mdi-close"></i></span></div>
+                </div>
+            <div class="col-md-2 text-right" style="margin: 15px 0;">
+                <span class="grid-btn"><i class="mdi mdi-menu"></i></span> <span class="grid-btn"><i class="mdi mdi-view-grid"></i></span>
+            </div>
+
+            </div>
+            <div class="col-md-12 tiles-section-spacing">
+            <div class="col-md-4">
+                <div class="c-card"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="c-card"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="c-card"></div>
+            </div>
+            </div>
+            <!--end row of tiles-->
+            <div class="col-md-12 company-tiles">
+            <div class="col-md-4">
+                <div class="c-card"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="c-card"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="c-card"></div>
+            </div>
+            </div>
+
+
+       </div> <!--end row-->
+
+
+
+    </div> <!--end container fluid-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<script scr="theme.js"></script>
+
+</body>
+</html>

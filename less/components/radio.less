@@ -1,0 +1,87 @@
+// main: ../theme.less
+
+////////////////////////////////////////////////
+//      RADIO BUTTON
+////////////////////////////////////////////////
+
+input[type=radio] {
+  opacity: 0; // hide, but keep 508 compliant tab focus
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  position: absolute;
+  border: none;
+}
+
+input[type=radio] + label {
+  outline: none;
+}
+
+// RADIO
+input[type=radio] + label::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  background: #FFFFFF;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.20);
+  border-radius: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: none;
+  -webkit-appearance: none;
+}
+
+// RADIO HOVER
+input[type=radio] + label:hover::after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: #9E9E9E;
+  left: 6px;
+  top: 6px;
+}
+
+// RADIO FOCUS
+input[type=radio]:focus + label::before,
+input[type=radio]:checked:focus + label::before {
+  box-shadow: 0px 0px 3px 0px #00AFF0, 0px 1px 2px 0px rgba(0,0,0,0.20), 0 0 0 1px #009ED8 inset;
+}
+
+// RADIO DOT
+input[type=radio]:checked + label::after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  background: #4D4D4D;
+  left: 6px;
+  top: 6px;
+}
+
+// LABEL
+input[type='radio'] + label span {
+  font-family: @font-sans-serif;
+  font-weight: @font-sans-serif-regular;
+  font-size: 14px;
+  color: #212121;
+  margin-left: 36px;
+  vertical-align: top;
+  line-height: 25px;
+  padding: 3px 5px;
+  transition: color 200ms ease;
+}
+
+// LABEL FOCUS
+input[type=radio]:focus + label span {
+  outline: 1px dashed rgba(0,0,0,.2);
+}
+
+
